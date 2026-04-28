@@ -1,0 +1,145 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VERY IMPORTANT */
+html, body, #root {
+  height: 100%;
+}
+
+/* CENTERING FIX */
+body {
+  font-family: 'Inter', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.5s ease;
+  color: rgb(7, 7, 7);
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+
+  border-radius: 20px;
+  padding: 30px 25px;
+
+  box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+
+  text-align: center;
+}
+
+/* HEADER */
+.header h1 {
+  font-size: 2.1rem;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 1.85rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.2);
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(48, 42, 42);
+}
+
+.search-box input::placeholder {
+  color: rgba(59, 49, 49, 0.7);
+}
+
+.search-box button {
+  padding: 0 16px;
+  border: none;
+  background: rgba(0,0,0,0.3);
+  color: rgb(48, 37, 37);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+/* WEATHER */
+.weather h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.condition {
+  opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  gap: 12px; /* space between boxes */
+  margin-top: 25px;
+}
+
+.stats div {
+  flex: 1;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+
+  border-radius: 12px;
+  padding: 12px 10px;
+
+  text-align: center;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.stats div:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stats span {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.stats p {
+  font-size: 1.45rem;
+  opacity: 0.75;
+  margin-top: 4px;
+}
